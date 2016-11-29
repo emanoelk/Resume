@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.get('/personalinfo', function (req,res){
 	console.log("i recieved a get request");
 	
-	db.contactlist.find(function (err,docs){
+	db.personalinfo.find(function (err,docs){
 		console.log(docs);
 		res.json(docs);
 	});
