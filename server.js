@@ -5,16 +5,16 @@ var db = mongojs('personalinfo',['personalinfo']);
 var bodyParser = require("body-parser");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
-app.get('/personalinfo', function (req,res){
-	console.log("i recieved a get request");
+//app.get('/personalinfo', function (req,res){
+//	console.log("i recieved a get request");
 	
-	db.personalinfo.find(function (err,docs){
-		console.log(docs);
-		res.json(docs);
-	});
+//	db.personalinfo.find(function (err,docs){
+//		console.log(docs);
+//		res.json(docs);
+//	});
 
 	
-});
+//});
 
 app.listen(8080);
 
