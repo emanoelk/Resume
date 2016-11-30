@@ -13,7 +13,7 @@
   <div class="container" ng-controller="AppCtrl">
     <h1>Resume</h1>
 
-    <table class="table">
+    <table class="table" border="1" cellpadding="1" cellspacing="1" >
       <thead>
         <tr>
           <th>School</th>         
@@ -41,7 +41,7 @@
       </thead>
       <tbody>
        
-        <tr ng-repeat="skill in skills" border="1" cellpadding="1" cellspacing="1">
+        <tr ng-repeat="skill in skills">
           <td>{{skill.skill}}</td>
         </tr>
 		
