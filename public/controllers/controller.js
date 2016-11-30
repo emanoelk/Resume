@@ -15,7 +15,19 @@ var refresh = function() {
 };
 
 refresh();
+var refresh2 = function() {
+  $http.get('/personalinfo2').success(function(response) {
+    
 
+	$scope.personalinfo2 = response;
+	$scope.info2 = "";
+
+
+
+  });
+};
+
+refresh2();
 
 
 
