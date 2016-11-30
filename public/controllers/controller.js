@@ -6,8 +6,8 @@ var refresh = function() {
   $http.get('/personalinfo').success(function(response) {
     
 
-	$scope.personalinfo = "1";
-//	$scope.info = "";
+	$scope.personalinfo = response;
+	$scope.info = "";
 
 
 
