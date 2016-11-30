@@ -5,10 +5,9 @@ myApp.controller('AppCtrl', ['$scope', '$http',
 var refresh = function() {
   $http.get('/personalinfo').success(function(response) {
     
-
-	$scope.personalinfo = response;
-	$scope.info = "";
-	$scope.personalinfo2 = response;
+	$scope.shools = response;
+	$scope.skills = response;
+	$scope.projects = response;
 
 
   });
