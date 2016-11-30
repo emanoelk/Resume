@@ -6,7 +6,7 @@ var refresh = function() {
   $http.get('/personalinfo').success(function(response) {
     
     $scope.personal = response;
-    $scope.name = "2";
+    $scope.name = "1";
   });
 };
 
