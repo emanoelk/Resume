@@ -4,11 +4,14 @@ myApp.controller('AppCtrl', ['$scope', '$http',
 	
 var refresh = function() {
   $http.get('/personalinfo').success(function(response) {
-    if(response != null || response != ""){
+    
 	$scope.schools = response;
+	$scope.school = "";
 	$scope.skills = response;
+	$scope.skill = "";	
 	$scope.projects = response;
-	};
+	$scope.project = "";
+	
 
   });
 };
