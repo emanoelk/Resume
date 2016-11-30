@@ -8,26 +8,14 @@ var refresh = function() {
 
 	$scope.personalinfo = response;
 	$scope.info = "";
-
+	$scope.personalinfo2 = response;
 
 
   });
 };
 
 refresh();
-var refresh2 = function() {
-  $http.get('/personalinfo2').success(function(response) {
-    
 
-	$scope.personalinfo2 = response;
-	$scope.info2 = "";
-
-
-
-  });
-};
-
-refresh2();
 
 
 
